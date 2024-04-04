@@ -20,8 +20,9 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 19px;
-    padding-bottom: 1.5%;
+    margin-bottom: 1.5%;
 }
+
 
 h1 {
     color: #099A97;
@@ -53,6 +54,10 @@ main {
 
 .principal__conteudo *:not(:last-child){
     margin-bottom: 20px;
+}
+
+.principal__imagem {
+    width: 100%;
 }
 
 h3 {
@@ -194,7 +199,7 @@ h5{
 }
 
 .avaliacao > span > div > img{
-    border: solid black 2px;
+    border: solid #122C34 5px;
     border-radius: 50%;
     width: 90%;
 }
@@ -202,8 +207,13 @@ h5{
 .avaliacao > span > div > p{
     color: #F1E4E4;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
+}
+
+.usuarios{
+    color: #15CDA8;
+    font-weight: 800;
 }
 
 .avaliacao > span > p{
@@ -223,4 +233,144 @@ footer *{
     color: #F1E4E4;
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 1000px) {
+    main{
+        padding: 5% 10%;
+    }
+    .container__valores > article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+    .container__valores{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 860px) {
+    .logo {
+        width: 100px;
+    }
+    
+    h1{
+        font-size: 42px;
+    }
+
+    header {
+        padding: 5% 3%;
+    }
+    .principal__conteudo{
+        padding: 5%;
+    }
+    .avaliacao > span {
+        flex-direction: column;
+    } 
+    .avaliacao > span > div {
+        flex-direction: row;
+        width: 100%;
+    }
+    .avaliacao > span > div > img{
+        width: 20%;
+    }
+    .avaliacao > span > div > p{
+        text-align: start;
+    }
+}
+
+@media (max-width: 680px) {
+
+    main{
+        padding: 5%;
+    }
+
+    .container__forms {
+        width: 85%;
+    }
+
+    .avaliacao > span{
+        width: 80%;
+    }
+
+    .avaliacao > span > p{
+        text-align: justify; 
+        width: 100%;
+    }
+
+    footer{
+        padding: 5%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .logo{
+        width: 80px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    main{
+        padding: 5% 3%;
+    }
+    h3, h5, .titulo__programa {
+        font-size: 24px;
+    }
+
+    .principal__conteudo{
+        padding: 5% 3%;
+    }
+
+    .principal__conteudo > p{
+        width: 90%;
+        text-align: justify;
+    }
+
+    .container__valores > article{
+        padding: 5%;
+        width: 75%;
+    }
+    .container__valores > article > img{
+        width: 100%;
+    }
+
+    .container__programas > article > p:not(.titulo__programa){
+        text-align: justify;
+    }
+
+    .formulario{
+        align-items: center;
+        padding: 5% 7%;
+    }
+
+    #mensagem, #nome, #email{
+        width: 90%;
+    }
+
+    .botao__formulario {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .avaliacao > span > div > img{
+        width: 70%;
+    }
+
+    .avaliacao > span > p{
+        font-size: 16px;
+    }
+
+    footer *{
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
 }
